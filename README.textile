@@ -1,0 +1,24 @@
+h1. SuperBall
+
+The SuperBall project is a demonstration application for the usage of iOS sensors. With the help of Cocos2d one can easily create and control all
+sorts of games and applications with those sensors.
+
+h2. Camera Usage, Audio Recording and GeoLocating
+
+See the configure player scene.
+
+h2. Accelerometer Usage
+
+See the accelerometer scenes.
+
+h2. Gyroscope Usage
+
+See the gyroscope scenes.
+
+h2. CoreMotion Usage
+
+See the coremotion scenes.
+
+h2. Magnetic Fields Usage
+
+See the corelocation magnetic field scene.
