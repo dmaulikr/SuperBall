@@ -23,6 +23,7 @@
 
 @property (nonatomic, retain) CCAction *moveAction;
 @property (nonatomic, retain) CCSpriteBatchNode *obstacles;
+@property (nonatomic, retain) CMMotionManager *motionManager;
 
 -(void)update:(ccTime)dt;
 

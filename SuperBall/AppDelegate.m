@@ -109,13 +109,8 @@
 	// Removes the startup flicker
 	[self removeStartupFlicker];
 	
-	// Run the intro Scene
+	// Run the Menu
 	[[CCDirector sharedDirector] runWithScene: [MainMenuScene node]];
-    
-    // setup accelerometer delegate
-    //CCLayer *layer = (CCLayer *)[[[CCDirector sharedDirector] runningScene] getChildByTag:1];
-    //[[UIAccelerometer sharedAccelerometer] setDelegate:layer];
-    //[[UIAccelerometer sharedAccelerometer] setUpdateInterval:1/60];
 }
 
 
@@ -125,6 +120,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
 	[[CCDirector sharedDirector] resume];
+    
+    [[CCDirector sharedDirector] replaceScene:[MainMenuScene node]];
 }
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {

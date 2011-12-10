@@ -10,7 +10,11 @@
 #import "cocos2d.h"
 #import "GyroBallLayer.h"
 #import "ObstacleLayer.h"
+#import "GyroHeadsupLayer.h"
+#import <CoreMotion/CoreMotion.h>
 
-@interface GyroscopeScene : CCScene
+@interface GyroscopeScene : CCScene{
+    CMMotionManager *motionManager;
+}
 
 @end

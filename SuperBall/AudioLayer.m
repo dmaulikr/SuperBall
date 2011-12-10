@@ -95,8 +95,6 @@
 #pragma mark - Memory
 
 - (void)dealloc {
-    [audioRecorder release];
-    [tmpRecording release];
     [super dealloc];
 }
 

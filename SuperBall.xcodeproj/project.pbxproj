@@ -49,7 +49,6 @@
 		6589A4DA146D893A00C7D19A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6589A4D9146D893A00C7D19A /* CoreGraphics.framework */; };
 		6589A4DE146D893A00C7D19A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6589A4DD146D893A00C7D19A /* Default.png */; };
 		6589A4E0146D893A00C7D19A /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 6589A4DF146D893A00C7D19A /* fps_images.png */; };
-		6589A4E2146D893A00C7D19A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6589A4E1146D893A00C7D19A /* Icon-72.png */; };
 		6589A4E4146D893A00C7D19A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6589A4E3146D893A00C7D19A /* Icon-Small-50.png */; };
 		6589A4E6146D893A00C7D19A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6589A4E5146D893A00C7D19A /* Icon-Small.png */; };
 		6589A4E8146D893A00C7D19A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6589A4E7146D893A00C7D19A /* Icon-Small@2x.png */; };
@@ -153,6 +152,7 @@
 		6589A62C146D894200C7D19A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589A62B146D894200C7D19A /* main.m */; };
 		6589A62F146D894200C7D19A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589A62E146D894200C7D19A /* AppDelegate.m */; };
 		6589A632146D894200C7D19A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589A631146D894200C7D19A /* RootViewController.m */; };
+		65CEF795149396A00026C8D5 /* GyroHeadsupLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CEF794149396A00026C8D5 /* GyroHeadsupLayer.m */; };
 		65E1A7B914700F5C00DF6412 /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1A7B814700F5C00DF6412 /* MainMenuScene.m */; };
 		65E1A7BC14700F7900DF6412 /* MainMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1A7BB14700F7900DF6412 /* MainMenuLayer.m */; };
 		65E1A7C01470179400DF6412 /* AccelerometerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1A7BF1470179400DF6412 /* AccelerometerScene.m */; };
@@ -161,6 +161,7 @@
 		65E1A86D14708C3200DF6412 /* ball_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E1A86C14708C3200DF6412 /* ball_arrow.png */; };
 		65E1A8701470942100DF6412 /* HeadsupLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1A86F1470942100DF6412 /* HeadsupLayer.m */; };
 		65E1A8721470997600DF6412 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E1A8711470997600DF6412 /* bar.png */; };
+		65EA046D14938AB1006E16C5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EA046C14938AB1006E16C5 /* Icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -229,7 +230,6 @@
 		6589A4D9146D893A00C7D19A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6589A4DD146D893A00C7D19A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		6589A4DF146D893A00C7D19A /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = Resources/fps_images.png; sourceTree = "<group>"; };
-		6589A4E1146D893A00C7D19A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
 		6589A4E3146D893A00C7D19A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
 		6589A4E5146D893A00C7D19A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
 		6589A4E7146D893A00C7D19A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
@@ -451,6 +451,8 @@
 		6589A630146D894200C7D19A /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		6589A631146D894200C7D19A /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		6589A636146D894200C7D19A /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		65CEF793149396A00026C8D5 /* GyroHeadsupLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GyroHeadsupLayer.h; sourceTree = "<group>"; };
+		65CEF794149396A00026C8D5 /* GyroHeadsupLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GyroHeadsupLayer.m; sourceTree = "<group>"; };
 		65E1A7B714700F5C00DF6412 /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
 		65E1A7B814700F5C00DF6412 /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
 		65E1A7BA14700F7900DF6412 /* MainMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuLayer.h; sourceTree = "<group>"; };
@@ -465,6 +467,7 @@
 		65E1A86E1470942100DF6412 /* HeadsupLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadsupLayer.h; sourceTree = "<group>"; };
 		65E1A86F1470942100DF6412 /* HeadsupLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadsupLayer.m; sourceTree = "<group>"; };
 		65E1A8711470997600DF6412 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		65EA046C14938AB1006E16C5 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../Icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,6 +505,8 @@
 				65326C76147942F600180F21 /* GyroAngleLayer.m */,
 				65326C7B1479486400180F21 /* GyroBallLayer.h */,
 				65326C7C1479486400180F21 /* GyroBallLayer.m */,
+				65CEF793149396A00026C8D5 /* GyroHeadsupLayer.h */,
+				65CEF794149396A00026C8D5 /* GyroHeadsupLayer.m */,
 			);
 			name = gyroscope;
 			sourceTree = "<group>";
@@ -635,9 +640,9 @@
 		6589A4DC146D893A00C7D19A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65EA046C14938AB1006E16C5 /* Icon-72.png */,
 				6589A4DD146D893A00C7D19A /* Default.png */,
 				6589A4DF146D893A00C7D19A /* fps_images.png */,
-				6589A4E1146D893A00C7D19A /* Icon-72.png */,
 				6589A4E3146D893A00C7D19A /* Icon-Small-50.png */,
 				6589A4E5146D893A00C7D19A /* Icon-Small.png */,
 				6589A4E7146D893A00C7D19A /* Icon-Small@2x.png */,
@@ -1059,7 +1064,6 @@
 			files = (
 				6589A4DE146D893A00C7D19A /* Default.png in Resources */,
 				6589A4E0146D893A00C7D19A /* fps_images.png in Resources */,
-				6589A4E2146D893A00C7D19A /* Icon-72.png in Resources */,
 				6589A4E4146D893A00C7D19A /* Icon-Small-50.png in Resources */,
 				6589A4E6146D893A00C7D19A /* Icon-Small.png in Resources */,
 				6589A4E8146D893A00C7D19A /* Icon-Small@2x.png in Resources */,
@@ -1074,6 +1078,7 @@
 				6533E0FF14728AD20086D686 /* player.png in Resources */,
 				65326C9A147A851000180F21 /* needle.png in Resources */,
 				65326C9C147A8A6D00180F21 /* needle2.png in Resources */,
+				65EA046D14938AB1006E16C5 /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1208,6 +1213,7 @@
 				65326C8D147A6E4600180F21 /* CoreMotionAngleLayer.m in Sources */,
 				65326C95147A745C00180F21 /* CoreLocationFieldScene.m in Sources */,
 				65326C98147A747B00180F21 /* CoreLocationNeedleLayer.m in Sources */,
+				65CEF795149396A00026C8D5 /* GyroHeadsupLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

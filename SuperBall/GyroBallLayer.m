@@ -10,15 +10,10 @@
 
 @implementation GyroBallLayer
 
-@synthesize moveAction, obstacles;
+@synthesize moveAction, obstacles, motionManager;
 
 -(id) init {
 	if((self=[super init])) {
-        
-        // create core motion manager
-        motionManager = [[CMMotionManager alloc] init];
-        motionManager.gyroUpdateInterval = 1.0/60.0;
-        [motionManager startGyroUpdates];
         
         // init animation
         accelerationX = 0.0;
@@ -44,11 +39,13 @@
 }
 
 -(void)update:(ccTime)dt {
+    if(!self.motionManager) return;
+    
     CCSprite *ball = (CCSprite *)[self getChildByTag:2];
     
     // calculate acceleration from rotation rate
-    accelerationX += motionManager.gyroData.rotationRate.x;
-    accelerationY += motionManager.gyroData.rotationRate.y;
+    accelerationX += self.motionManager.gyroData.rotationRate.x;
+    accelerationY += self.motionManager.gyroData.rotationRate.y;
     
     nextX = ball.position.x + accelerationX;
     nextY = ball.position.y + accelerationY;
@@ -104,7 +101,7 @@
 }
 
 - (void)dealloc {
-    [motionManager release];
+    self.motionManager = nil;
     [super dealloc];
 }
 
